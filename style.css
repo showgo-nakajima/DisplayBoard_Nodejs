@@ -98,10 +98,16 @@ input{
   width: 100%;
 }
 
-.id p,.password p{
-  padding-left: 390px;
+.id p, .password p {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 425px;
 }
 
+.id input, .password input {
+  display: inline-block;
+  vertical-align: middle;
+}
 
 
 
@@ -196,6 +202,14 @@ input{
   padding-top: 20px;
 }
 
+.pdt30{
+  padding-top: 30px;
+}
+
+.pdt50{
+  padding-top: 50px;
+}
+
 .pdr15{
   padding-right: 15px;
 }
@@ -206,6 +220,10 @@ input{
 
 .pdb15{
   padding-bottom: 15px;
+}
+
+.pdb50{
+  padding-bottom: 50px;
 }
 
 .pdl15{
