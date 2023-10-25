@@ -72,9 +72,9 @@ input{
   height: 35px;
 }
 
-/* textarea{
-
-} */
+a {
+  display: inline-block;
+}
 
 .index-input{
   display: flex;
@@ -98,10 +98,16 @@ input{
   width: 100%;
 }
 
-.id p, .password p {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 425px;
+.id p{
+  position: relative;
+  top: -20px;
+  left: -245px;
+}
+
+.password p{
+  position: relative;
+  top: -20px;
+  left: -278px;
 }
 
 .id input, .password input {
@@ -109,7 +115,20 @@ input{
   vertical-align: middle;
 }
 
+.new-user p{
+  position: relative;
+  right: 278px;
+}
 
+.new-ID p{
+  position: relative;
+  right: 238px;
+}
+
+.new-pw p{
+  position: relative;
+  right:278px;
+}
 
 .txt-right{
   text-align: right;
@@ -129,6 +148,16 @@ input{
   background-color: blue;
   color:white;
   width: 200px;
+}
+
+.user-link{
+  position: relative;
+}
+
+.user-link p{
+  position: absolute;
+  right: 280px;
+  bottom: 20px;
 }
 
 .wtMax{
@@ -210,6 +239,10 @@ input{
   padding-top: 50px;
 }
 
+.pdt70{
+  padding-top: 70px;
+}
+
 .pdr15{
   padding-right: 15px;
 }
@@ -224,6 +257,14 @@ input{
 
 .pdb50{
   padding-bottom: 50px;
+}
+
+.pdb350{
+  padding-bottom: 350px;
+}
+
+.pdb70{
+  padding-bottom: 70px;
 }
 
 .pdl15{
