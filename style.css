@@ -1,0 +1,234 @@
+body,h1,h2,p,button,ul {
+  margin: 0;
+  padding:0;
+}
+
+body{
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+.text-center {
+  text-align:center;
+}
+
+header{
+  padding:10px;
+}
+
+footer{
+  background-color: #818181;
+  height: 90px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+button{
+  background-color: #ffffff;
+  color:#0077ff;
+  width: 400px;
+  padding:10px;
+  font-size: 15px;
+  font-weight: 1000;
+  border: none;
+}
+
+.sled-list {
+  padding: 10px;
+}
+
+.sled-list ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin:5px 0;
+  font-size: 12px;
+}
+
+.opt-link a{
+  text-decoration: none;
+}
+
+.opt-link{
+  display: flex;
+  gap:40px;
+  justify-content: flex-end;
+}
+
+.post-content{
+  font-size: 14px;
+  padding-top: 15px;
+  padding-left: 50px;
+  padding-bottom: 30px;
+}
+
+input,textarea{
+  border: none;
+}
+
+input{
+  height: 35px;
+}
+
+/* textarea{
+
+} */
+
+.index-input{
+  display: flex;
+  gap: 35px;
+  align-items: stretch;
+}
+
+.email {
+  padding-top: 6px;
+}
+
+.name input p,.email input p{
+  width: 100%;
+}
+
+.input .email p{
+  padding-top:6px;
+}
+
+.textarea{
+  width: 100%;
+}
+
+.id p,.password p{
+  padding-left: 390px;
+}
+
+
+
+
+.txt-right{
+  text-align: right;
+}
+
+.txt-left{
+  text-align: left;
+}
+
+.write-btn {
+  background-color: blue;
+  color:white;
+  width: 200px;
+}
+
+.login-btn {
+  background-color: blue;
+  color:white;
+  width: 200px;
+}
+
+.wtMax{
+  width:100%;
+}
+
+.wt500{
+  width:500px;
+}
+
+.wt630{
+  width: 630px;
+}
+
+.bgc-gry{
+  background-color: #bdb9b9;
+}
+/*margin*/
+/*margin-* : 10px;*/
+.mgt10{
+  margin-top:10px;
+}
+
+.mgr10{
+  margin-right: 10px;
+}
+
+.mgb10{
+  margin-bottom: 10px;
+}
+
+.mgl10{
+  margin-left: 10px;
+}
+/*margin-* : 50px;*/
+.mgt50{
+  margin-top:50px;
+}
+
+.mgr50{
+  margin-right: 50px;
+}
+
+.mgb50{
+  margin-bottom: 50px;
+}
+
+.mgl50{
+  margin-left: 50px;
+}
+
+/*padding*/
+.pdg15{
+  padding:15px;
+}
+
+.pdg30{
+  padding:30px;
+}
+
+.pdg50{
+  padding:50px;
+}
+
+/*padding-* : 10px;*/
+.pdt15{
+  padding-top:15px;
+}
+
+.pdt20{
+  padding-top: 20px;
+}
+
+.pdr15{
+  padding-right: 15px;
+}
+
+.pdr40{
+  padding-right: 40px;
+}
+
+.pdb15{
+  padding-bottom: 15px;
+}
+
+.pdl15{
+  padding-left: 15px;
+}
+/*padding-* : 50px;*/
+.pdt50{
+  padding-top:50px;
+}
+
+.pdr50{
+  padding-right: 50px;
+}
+
+.pdb50{
+  padding-bottom: 50px;
+}
+
+.pdl50{
+  padding-left: 50px;
+}
+
+.flex{
+  display: flex;
+  gap: 25px;
+}
