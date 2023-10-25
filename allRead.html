@@ -7,51 +7,12 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header class="header">
-            <!--ハンバーガーメニュー＊＊＊-->
-            <div class="hamburger-menu">
-                <input type="checkbox" id="menu-btn-check">
-                <label for="menu-btn-check" class="menu-btn"><span></span></label>
-                <div class="menu-content">
-                    <ul>
-                        <li>ようこそゲストさん</li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">メニューリンク1</a></li>
-                        <li><a href="#">メニューリンク2</a></li>
-                        <li><a href="#">メニューリンク3</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--＊＊＊-->
+        <header>
             <div class="bgc-gry text-center" style="max-width: 500px; margin: 0 auto;">
                 <h1 class="mgt50">なんでも掲示板</h1>
             </div>
         </header>
         <main>
-            <div class="bgc-gry pdg15 mgb10 mgt50">
-                <button>新規スレッドを書く</button>
-            </div>
-            <div class="bgc-gry sled-list">
-                <ul>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）,</li>
-                    <li>No.スレッドタイトル（レス数）</li>
-                </ul>
-            </div>
             <div class="bgc-gry sled-content mgt50 pdg15">
                 <h3>No. スレッドタイトル</h3>
                 <div class="flex">
@@ -61,15 +22,12 @@
                 <div class="post-content"> コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。<br> コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。<br> コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。<br> コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。<br>
                 </div>
             </div>
-            <div class="opt-link bgc-gry pdr50"><!--### 一番下の要素のみに表示-->
+            <div class="opt-link bgc-gry pdr215"><!--### 一番下の要素のみに表示-->
                 <div class="write">
                     <a href="#"><p>書き込む</p></a>
                 </div>
                 <div class="Favorite">
                     <a href="#"><p>お気に入り（ふぁぼ数）</p></a>
-                </div>
-                <div class="allRead-page">
-                    <a href="#"><p>全部読む（レス数）</p></a>
                 </div>
             </div>
             <div class="index-input bgc-gry pdg15">
@@ -82,10 +40,10 @@
                     <input type="text">
                 </div>
             </div>
-            <div class="text-area bgc-gry pdgr15 pdl15">
+            <div class="text-area bgc-gry pdgr15 pdl15 pdr15">
                 <textarea name="" id="" cols="140" rows="10"></textarea>
             </div>
-            <div class="bgc-gry btn pdg15 txt-right pdr40">
+            <div class="bgc-gry btn pdg15 txt-right">
                 <button class="write-btn">書き込む</button>
             </div>
             <div class="pagination text-center pdg30">
@@ -95,6 +53,5 @@
         <footer>
             <p class="text-center">copy write</p>
         </footer>
-        <script src="hamburgerMenu.js"></script>
     </body>
 </html>
