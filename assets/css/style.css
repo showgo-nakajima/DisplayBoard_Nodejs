@@ -145,6 +145,12 @@ a {
   width: 200px;
 }
 
+.del-post-btn{
+  background-color: #bdb9b9;
+  color: blue;
+  width: 200px;
+}
+
 .login-btn {
   background-color: blue;
   color:white;
@@ -309,7 +315,7 @@ a {
   justify-content: center;
   align-items: center;
   z-index: 90;
-  background-color: #3584bb;
+  background-color: #ffffff;
 }
 .menu-btn span,
 .menu-btn span:before,
@@ -319,7 +325,7 @@ a {
   height: 3px;
   width: 25px;
   border-radius: 3px;
-  background-color: #ffffff;
+  background-color: #3584bb;
   position: absolute;
 }
 .menu-btn span:before {
@@ -327,6 +333,7 @@ a {
 }
 .menu-btn span:after {
   top: 8px;
+  position: absolute;
 }
 
 #menu-btn-check:checked ~ .menu-btn span {
@@ -352,14 +359,13 @@ a {
   top: 0;
   left: 100%;
   z-index: 80;
-  background-color: white;
+  background-color: rgb(209, 208, 208);
   transition: all 0.5s;
 }
 .menu-content ul {
-  padding: 30px 10px 0;
+  padding: 60px 60px 20px 20px;
 }
 .menu-content ul li {
-  border-bottom: solid 1px #ffffff;
   list-style: none;
 }
 .menu-content ul li a {
@@ -384,5 +390,48 @@ a {
   top: 16px;
 }
 #menu-btn-check:checked ~ .menu-content {
-  left: 1350px;/*メニューを画面内へ*/
+  left: 1250px;/*メニューを画面内へ*/
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+  right: 60px; /* メニューが表示されると同時に左に移動 */
+}
+#menu-btn-check:checked ~ .menu-btn span {
+  display: none;
+}
+
+/* 検索BOX 表示非表示
+.search-box{
+  display: none;
+} */
+
+.hidden{
+  display: none;
+}
+
+/* 虫眼鏡ボタンのスタイル */
+#search-button {
+  position: relative;
+  right: 40px;
+  background-color: transparent;
+  width:15px;
+  border: none;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#search-button img {
+  width: 20px; /* 虫眼鏡画像の幅を調整 */
+}
+
+/* 検索ボックス内の要素の配置調整 */
+#search-input {
+  width: 225px; /* テキストボックスの幅を調整 */
+}
+
+#search-box {
+  display: none;
+  /* display: flex;
+  align-items: center; */
 }

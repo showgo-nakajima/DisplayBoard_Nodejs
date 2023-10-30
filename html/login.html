@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ログイン画面</title>
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <header>
+            <!--ハンバーガーメニュー★-->
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li class="user-type">ようこそ　ゲストさん</li>
+                    </ul>
+                    <ul>
+                        <li><a href="index.html#create-sled">新規スレッドを書く</a></li>
+                        <li><a href="login.html">ログイン</a></li>
+                        <li><a href="sign_up.html">新規ユーザー登録</a></li>
+                        <li id="search-trigger"><a href="#">掲示板検索</a></li>
+                        <div id="search-box">
+                            <input type="text" id="search-input" placeholder="キーワードを入力">
+                            <button id="search-button"><img src="icon.png" alt="Search"></button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!--★-->
+            <div class="bgc-gry text-center" style="max-width: 500px; margin: 0 auto;">
+                <h1 class="mgt50">なんでも掲示板</h1>
+            </div>
+        </header>
+        <main class="pdt50">
+            <div class="bgc-gry">
+                <div class="bgc-gry text-center" style="max-width: 500px; margin: 0 auto;">
+                    <h1 class="pdg50">ユーザーログイン</h1>
+                </div>
+                <div class="pdg15 text-center">
+                    <div class="id pdb50">
+                        <p>ID(メールアドレス)</p>
+                        <div class="text-center">
+                            <input type="text" name="email" class="wt630">
+                        </div>
+                    </div>
+                    <div class="password">
+                        <p>パスワード</p>
+                        <div class="text-center">
+                            <input type="password" name="password" class="wt630">
+                        </div>
+                    </div>
+                </div>
+                <div class="bgc-gry btn pdg15 text-center pdr40 pdt50 pdb50">
+                    <button class="login-btn" type="submit" id="login-button">ログイン</button>
+                </div>
+                <!--エラーメッセージ表示用の要素-->
+                <div id="error-message" style="color:red;"></div>
+                <div class="bgc-gry txt-right user-link">
+                    <a href="sign_up.html"><p>新規ユーザー登録はこちら</p></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p class="text-center">copy write</p>
+        </footer>
+        <script src="main.js"></script>
+        <script type="module" src="../server.cjs"></script>
+        <script>
+            const loginButton = document.getElementById('login-button');
+            loginButton.addEventListener('click', async () => {
+                const email = document.querySelector("input[name='email']").value;
+                const password = document.querySelector("input[name='password']").value;
+
+                // クライアント側のバリデーション
+                if (!email || !password) {
+                    document.getElementById("error-message").textContent = "IDとパスワードを入力してください.";
+                    return;
+                }
+
+                // サーバーへのログイン情報を送信
+                try {
+                    const response = await fetch("/login", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json"
+                        },
+                        body: JSON.stringify({ email: email, password: password })
+                    });
+
+                    if (response.status === 200) {
+                        const data = await response.json();
+                        console.log(data);
+                        // ログイン成功時のページ遷移をここに追加
+
+                        //ユーザー名を取得
+                        const username = data.username;
+
+                        //ユーザー名をセッションストレージに保存
+                        sessionStorage.setItem('username',username);
+                        //ログイン成功時に遷移するページ
+                        window.location.href = "index.html";
+                    } else {
+                        const errorData = await response.json();
+                        console.log(errorData);
+                        document.getElementById('error-message').textContent = "IDとパスワードが一致しません.";
+                    }
+
+                } catch (error) {
+                    console.error('エラー' + error.message);
+                }
+            });
+        </script>
+    </body>
+</html>

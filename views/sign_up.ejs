@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>新規ユーザー登録</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <!--ハンバーガーメニュー★-->
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li class="user-type">ようこそ　ゲストさん</li>
+                    </ul>
+                    <ul>
+                        <li><a href="index.html#create-sled">新規スレッドを書く</a></li>
+                        <li><a href="login.html">ログイン</a></li>
+                        <li><a href="sign_up.html">新規ユーザー登録</a></li>
+                        <li id="search-trigger"><a href="#">掲示板検索</a></li>
+                        <div id="search-box">
+                            <input type="text" id="search-input" placeholder="キーワードを入力">
+                            <button id="search-button"><img src="icon.png" alt="Search"></button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!--★-->
+            <div class="bgc-gry text-center" style="max-width: 500px; margin: 0 auto;">
+                <h1 class="mgt50">なんでも掲示板</h1>
+            </div>
+        </header>
+            <main class="pdt50">
+                <div class="bgc-gry">
+                    <div class="bgc-gry text-center" style="max-width: 500px; margin: 0 auto;">
+                        <h1 class="pdg50">新規ユーザー登録</h1>
+                    </div>
+                    <div class="pdg15 text-center">
+                        <div class="new-user pdb50">
+                            <p>ユーザー名</p>
+                            <div class="text-center">
+                                <input type="text" class="wt630">
+                            </div>
+                        </div>
+                        <div class="new-ID pdb50">
+                            <p>ID（メールアドレス）</p>
+                            <div class="text-center">
+                                <input type="text" class="wt630">
+                            </div>
+                        </div>
+                        <div class="new-pw">
+                            <p>パスワード</p>
+                            <div class="text-center">
+                                <input type="text" class="wt630">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bgc-gry btn pdg15 text-center pdr40 pdt50 pdb50">
+                        <button class="login-btn">登録</button>
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <p class="text-center">copy write</p>
+            </footer>
+            <script src="main.js"></script>
+    </body>
+</html>

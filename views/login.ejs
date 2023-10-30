@@ -8,9 +8,31 @@
     </head>
     <body>
         <header>
+            <!--ハンバーガーメニュー★-->
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li class="user-type">ようこそ　ゲストさん</li>
+                    </ul>
+                    <ul>
+                        <li><a href="index.html#create-sled">新規スレッドを書く</a></li>
+                        <li><a href="login.html">ログイン</a></li>
+                        <li><a href="sign_up.html">新規ユーザー登録</a></li>
+                        <li id="search-trigger"><a href="#">掲示板検索</a></li>
+                        <div id="search-box">
+                            <input type="text" id="search-input" placeholder="キーワードを入力">
+                            <button id="search-button"><img src="icon.png" alt="Search"></button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!--★-->
             <div class="bgc-gry text-center" style="max-width: 500px; margin: 0 auto;">
                 <h1 class="mgt50">なんでも掲示板</h1>
             </div>
+        </header>
             <main class="pdt50">
                 <div class="bgc-gry">
                     <div class="bgc-gry text-center" style="max-width: 500px; margin: 0 auto;">
@@ -34,13 +56,13 @@
                         <button class="login-btn">ログイン</button>
                     </div>
                     <div class="bgc-gry txt-right user-link">
-                        <a href="#"><p>新規ユーザー登録はこちら</p></a>
+                        <a href="sign_up.html"><p>新規ユーザー登録はこちら</p></a>
                     </div>
                 </div>
             </main>
             <footer>
                 <p class="text-center">copy write</p>
             </footer>
-        </header>
+            <script src="main.js"></script>
     </body>
 </html>

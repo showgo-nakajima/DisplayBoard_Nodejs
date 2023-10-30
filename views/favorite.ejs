@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>お気に入り一覧</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <!--ハンバーガーメニュー★-->
+            <div class="hamburger-menu">
+                <input type="checkbox" id="menu-btn-check">
+                <label for="menu-btn-check" class="menu-btn"><span></span></label>
+                <div class="menu-content">
+                    <ul>
+                        <li class="user-type">ようこそ　ゲストさん</li>
+                    </ul>
+                    <ul>
+                        <li><a href="index.html#create-sled">新規スレッドを書く</a></li>
+                        <li><a href="login.html">ログイン</a></li>
+                        <li><a href="sign_up.html">新規ユーザー登録</a></li>
+                        <li id="search-trigger"><a href="#">掲示板検索</a></li>
+                        <div id="search-box">
+                            <input type="text" id="search-input" placeholder="キーワードを入力">
+                            <button id="search-button"><img src="icon.png" alt="Search"></button>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!--★-->
+            <div class="bgc-gry text-center" style="max-width: 500px; margin: 0 auto;">
+                <h1 class="mgt50">なんでも掲示板</h1>
+            </div>
+        </header>
+        <main>
+            <div class="bgc-gry pdg15 mgb10 mgt50" id="create-sled">
+                <button>新規スレッドを書く</button>
+            </div>
+            <div class="bgc-gry sled-list">
+                <ul>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）,</li>
+                    <li>No.スレッドタイトル（レス数）</li>
+                </ul>
+            </div>
+            <div class="bgc-gry sled-content mgt50 pdg15">
+                <h3>No. スレッドタイトル</h3>
+                <div class="flex">
+                    <p>1 名前：ユーザー名：2023/08/29（火）22:30:44:56</p>
+                    <a href="#"><p>編集</p></a>
+                </div>
+                <div class="post-content"> コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。<br> コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。<br> コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。<br> コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。コンテンツ内容です。<br>
+                </div>
+            </div>
+            <div class="opt-link bgc-gry pdr50"><!--### 一番下の要素のみに表示-->
+                <div class="write">
+                    <a href="#"><p>書き込む</p></a>
+                </div>
+                <div class="Favorite">
+                    <a href="#"><p>お気に入り（ふぁぼ数）</p></a>
+                </div>
+                <div class="allRead-page">
+                    <a href="#"><p>全部読む（レス数）</p></a>
+                </div>
+            </div>
+            <div class="index-input bgc-gry pdg15">
+                <div class="name">
+                    <p>名前</p>
+                    <input type="text">
+                </div>
+                <div class="email">
+                    <p>email</p>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="text-area bgc-gry pdgr15 pdl15">
+                <textarea name="" id="" cols="140" rows="10"></textarea>
+            </div>
+            <div class="bgc-gry btn pdg15 txt-right pdr40">
+                <button class="write-btn">書き込む</button>
+            </div>
+            <div class="pagination text-center pdg30">
+                <p>前へ　2 3 4 5 6 7 8 9 10...　次へ</p>
+            </div>
+        </main>
+        <footer>
+            <p class="text-center">copy write</p>
+        </footer>
+        <script src="main.js"></script>
+    </body>
+</html>
